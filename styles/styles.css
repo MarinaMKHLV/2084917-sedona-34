@@ -23,7 +23,7 @@ body {
   margin: 0 auto;
   flex-direction: column;
   min-height: 100%;
-  min-width: 1280px;
+  min-width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -763,7 +763,13 @@ img {
   fill: #83B3D3;
 }
 
+.contacts-phone-container {
+  display: block;
+width: 331px;
+}
+
 .footer-contacts-phone {
+  display: block;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -789,6 +795,7 @@ img {
 }
 
 .htmlacademy-link {
+  display: block;
   padding-top: 8px;
   padding-bottom: 5px;
 }
@@ -1124,10 +1131,6 @@ img {
   background-color: #68A2CA;
 }
 
-.tooltip-button:default {
-  background-color: #83B3D3;
-}
-
 .tooltip-text {
   position: absolute;
   font-family: inherit;
@@ -1146,6 +1149,11 @@ img {
   z-index: 1;
   top: -7px;
   left: -112px;
+  display: none;
+}
+
+.tooltip-button:hover + .tooltip-text{
+  display: block;
 }
 
 .field-group-child {
@@ -1512,6 +1520,9 @@ img {
   padding: 14px 14px 14px 20px;
   color: #ffffff;
   font: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   background-color: transparent;
   border: 2px solid #ffffff;
   -webkit-appearance: textfield;
@@ -1599,15 +1610,16 @@ img {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+.range-toggle:focus {
+  border: 3px solid #83B3D3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
 .range-toggle:active {
   border: 2px solid #83B3D3;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.range-toggle:focus {
-  border: 3px solid #83B3D3;
-  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
-}
 
 .range-toggle:disabled {
   background-color: #E5E5E5;
@@ -1615,7 +1627,6 @@ img {
 
 .toggle-min {
   top: -7px;
-  left: 1px;
 }
 
 .toggle-max {

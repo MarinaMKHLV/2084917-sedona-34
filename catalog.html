@@ -13,7 +13,7 @@
       <header class="page-header">
         <nav class="navigation">
           <div class="navigation-container">
-            <a class="navigation-logo">
+            <a class="navigation-logo" href="index.html">
               <img class="navigation-logo" src="images/pictures-html/logo-sedona.svg" width="139" height="70"
                 alt="Логотип сайта города Седона.">
             </a>
@@ -139,10 +139,10 @@
                   <legend class="filter-price-title">Стоимость, <span>₽:</span></legend>
                   <div class="range">
                     <div class="range-inputs-container">
-                      <label class="catalog-filter-label label-min-price">от</label>
-                      <input class="range-input range-input-min" type="text" value="0" name="min-price">
-                      <label class="catalog-filter-label label-max-price">до</label>
-                      <input class="range-input range-input-max" type="text" value="9000" name="max-price">
+                      <label class="catalog-filter-label label-min-price" for=min-price>от</label>
+                      <input class="range-input range-input-min" type="text" value="0" name="min-price" id="min-price">
+                      <label class="catalog-filter-label label-max-price" for="max-price">до</label>
+                      <input class="range-input range-input-max" type="text" value="9000" name="max-price" id="max-price">
                     </div>
                   </div>
 
@@ -293,7 +293,7 @@
 
               <div class="hotels-amount">
                 <label class="hotels-amount-title">Гостиниц на странице:</label>
-                <select class="select-control select-control-amount" aria-label="Сортировка">
+                <select class="select-control select-control-amount" aria-label="Количество гостиниц">
                   <option value="numbers">4</option>
                 </select>
               </div>
