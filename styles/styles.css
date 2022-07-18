@@ -321,7 +321,7 @@ img {
   display: block;
   padding: 21px 12px 20px 12px;
   margin-left: 21px;
-  margin-right: -8px;
+  margin-right: -7px;
 }
 
 .navigation-link-search:hover,
@@ -595,7 +595,7 @@ img {
 }
 
 .hotel-search {
-  padding: 90px 303px 93px;
+  padding: 91px 303px 93px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -742,7 +742,7 @@ img {
   width: 48px;
   height: 40px;
   fill: #83B3D3;
-  padding-top: 5px;
+  padding-top: 3px;
   padding-bottom: 5px;
 }
 
@@ -771,9 +771,9 @@ img {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 6px;
-  padding-bottom: 5px;
-  margin-left: -8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: -7px;
 }
 
 .footer-contacts-phone:hover,
@@ -792,7 +792,7 @@ img {
 
 .htmlacademy-link {
   display: block;
-  padding-top: 8px;
+  padding-top: 6px;
   padding-bottom: 5px;
 }
 
@@ -1286,18 +1286,22 @@ img {
 
 .breadcrumbs-item {
   position: relative;
-  margin: 0;
   margin-right: 10px;
 }
 
 .breadcrumbs-item::after {
   position: absolute;
-  content: url("../images/pictures-catalog/breadcrumbs-arrow.svg");
+  background-image: url("../images/pictures-catalog/breadcrumbs-arrow.svg");
   background-repeat: no-repeat;
   width: 6px;
   height: 8px;
-  top: -1px;
+  top: 11px;
   left: 25px;
+  content: "";
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
 }
 
 .breadcrumbs-link {
